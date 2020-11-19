@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(Stack)
+set(SOURCES Stack.cpp)
+set(HEADERS Stack.h)
+add_library(Stack STATIC ${SOURCES} ${HEADERS})
+target_include_directories(Stack PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
